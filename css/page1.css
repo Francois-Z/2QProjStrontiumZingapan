@@ -1,0 +1,41 @@
+#artist {
+	margin: 0px;
+	position: absolute;
+}
+
+/*Preservation*/
+div.leras {
+	background: white url("../images/smokesource.png") no-repeat -150px -150px;
+	margin: 0px;
+}
+div.leras > img {
+	box-sizing: border-box;
+	width: 25%;
+	margin: 20px 7.5%;
+	float: left;
+}
+div.leras div {
+	margin: 0px 7.5%;
+}
+div.feruchemy {
+	border: 4px double black;
+	padding: 5px;
+}
+div.leras p, div.ati p {
+	font-size: 120%;
+}
+/*Ruin*/
+div.ati {
+	background: black url("../images/smokesource.png") no-repeat right -150px top -150px;
+	margin: 0px;
+	color: white;
+}
+div.ati > img {
+	box-sizing: border-box;
+	width: 25%;
+	margin: 20px 7.5%;
+	float: right;
+}
+div.ati div {
+	margin: 0px 7.5%;
+}
