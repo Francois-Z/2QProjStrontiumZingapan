@@ -14,7 +14,7 @@ p,h1,h2,h3,h4,h5,h6{margin: 0px}
 /*formatting*/
 
 /*header & banner*/
-#header {
+header {
 	margin: 0px;
 	position: fixed;
 	color: white;
@@ -28,21 +28,21 @@ p,h1,h2,h3,h4,h5,h6{margin: 0px}
 	z-index: 2;
 	font-family: "Gideon Roman", display, serif;
 }
-#header a {
+header a {
 	text-decoration: none;
 	color: white;
 }
 /*replaces "The Mist Archives" with "To Home" when you hover over it*/
-#header a h1:nth-child(2){
+header a h1:nth-child(2){
 	color: rgba(255,255,255,0)
 }
-#header a:hover h1:nth-child(1){
+header a:hover h1:nth-child(1){
 	color: rgba(255,255,255,0);
 }
-#header a:hover h1:nth-child(2){
+header a:hover h1:nth-child(2){
 	color: rgba(255,255,255,1)
 }
-#header a h1{
+header a h1{
 	position:absolute;
 }
 /**/
@@ -64,13 +64,13 @@ p,h1,h2,h3,h4,h5,h6{margin: 0px}
 
 
 /*Navigation*/
-div.nav {
+nav {
 	box-sizing: border-box;
 	position: sticky;
 	top: 60px;
 	z-index: 2;
 }
-div.nav div {
+nav div {
 	box-sizing: border-box;
 	background-color: black;
 	border: 2px solid white;
@@ -79,22 +79,22 @@ div.nav div {
 	float: left;
 	border-radius: 0px 0px 10px 10px;
 }
-div.nav p {
+nav p {
 	text-align: center;
 	padding: 10px 0;
 }
-div.nav a {
+nav a {
 	color: white;
 	
 }
-div.nav a:hover div{
+nav a:hover div{
 	background: #0d0d0d url("../images/bluemist3.png") no-repeat -10px -100px;
 	font-size: 110%;
 }
 
 
 /*footer*/
-.footer {
+footer {
 	box-sizing: border-box;
 	height: 150px;
 	width: 100%;
@@ -102,6 +102,6 @@ div.nav a:hover div{
 	color: white;
 	padding: 10px 100px 0px 100px;
 }
-.footer > div {
+footer > div {
 	width: 20%;
 }
