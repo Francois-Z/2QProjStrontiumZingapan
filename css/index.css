@@ -1,18 +1,15 @@
 /*About the Navigations*/
-div.desc {
-	
-}
-div.desc > div {
+section.desc > article {
 	float: left;
 	width: 25%;
 	box-sizing: border-box;
 }
-div.desc div > p {
+section.desc article > p {
 	margin: 0% 15%;
 	border: 3px double black;
 	padding: 5px;
 }
-div.desc img {
+section.desc img {
 	display: block;
 	margin: 10px auto;
 	width: 60%;
@@ -24,17 +21,17 @@ div.desc img {
 
 
 /*About the Book*/
-div.book {
+section.book {
 	background: black url("../images/smokesource.png") no-repeat -150px -150px;
 	color: white;
 	margin-top: 50px;
 }
-div.book > p, div.book > h1{
+section.book > p, section.book > h1{
 	float: left;
 	margin: 20px 0% 20px 5%;
 	width: 50%;
 }
-div.book > img {
+section.book > img {
 	display: block; 
 	float: left;
 	width: 300px;
@@ -43,17 +40,17 @@ div.book > img {
 
 
 /*About the Author*/
-div.author {
+section.author {
 	background: white url("../images/smokesource.png") no-repeat;
 	background-position: right -150px top -150px;
 }
-div.author > p, div.author > h1{
+section.author > p, section.author > h1{
 	float: right;
 	margin: 20px 5% 20px 0%;
 	width: 50%;
 	text-align: right;
 }
-div.author > img {
+section.author > img {
 	display: block; 
 	float: right;
 	width: 500px;
