@@ -1,10 +1,10 @@
 /*About the Navigations*/
-.desc > article {
+section.desc > article {
 	float: left;
 	width: 25%;
 	box-sizing: border-box;
 }
-.desc article > p {
+section.desc article > p {
 	margin: 0% 15%;
 	border: 3px double black;
 	padding: 5px;
