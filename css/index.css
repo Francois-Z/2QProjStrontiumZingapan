@@ -1,15 +1,15 @@
 /*About the Navigations*/
-section.desc > article {
+.desc > article {
 	float: left;
 	width: 25%;
 	box-sizing: border-box;
 }
-section.desc article > p {
+.desc article > p {
 	margin: 0% 15%;
 	border: 3px double black;
 	padding: 5px;
 }
-section.desc img {
+.desc img {
 	display: block;
 	margin: 10px auto;
 	width: 60%;
