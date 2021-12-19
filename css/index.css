@@ -1,10 +1,10 @@
 /*About the Navigations*/
-section.desc > div {
+section.desc > article {
 	float: left;
 	width: 25%;
 	box-sizing: border-box;
 }
-section.desc div > p {
+section.desc article > p {
 	margin: 0% 15%;
 	border: 3px double black;
 	padding: 5px;
@@ -26,7 +26,7 @@ section.book {
 	color: white;
 	margin-top: 50px;
 }
-section.book > p, div.book > h1{
+section.book > p, section.book > h1{
 	float: left;
 	margin: 20px 0% 20px 5%;
 	width: 50%;
@@ -44,7 +44,7 @@ section.author {
 	background: white url("../images/smokesource.png") no-repeat;
 	background-position: right -150px top -150px;
 }
-section.author > p, div.author > h1{
+section.author > p, section.author > h1{
 	float: right;
 	margin: 20px 5% 20px 0%;
 	width: 50%;
