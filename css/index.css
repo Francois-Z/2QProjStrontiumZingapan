@@ -26,33 +26,42 @@ section.book {
 	color: white;
 	margin-top: 50px;
 }
-section.book > p, section.book > h1{
+section.book article {
 	float: left;
-	margin: 20px 0% 20px 5%;
-	width: 50%;
+	margin: 20px 5%;
+	width: 67%;
 }
-section.book > img {
-	display: block; 
+section.book img {
+	margin: 20px 0 20px 5%;
+	width: 17%;
 	float: left;
-	width: 300px;
-	margin: 20px 5% 50px 10%;
 }
-
 
 /*About the Author*/
 section.author {
 	background: white url("../images/smokesource.png") no-repeat;
 	background-position: right -150px top -150px;
 }
-section.author > p, section.author > h1{
+section.author article{
+	box-sizing: border-box;
 	float: right;
-	margin: 20px 5% 20px 0%;
-	width: 50%;
+	width: 40%;
 	text-align: right;
+	margin: 20px 5%;
 }
-section.author > img {
-	display: block; 
+section.author video {
+	display: block;
+	box-sizing: border-box;
 	float: right;
-	width: 500px;
-	margin: 20px 10% 20px 5%;
+	width: 100%;
+	
+}
+section.author #medholder {
+	box-sizing: border-box;
+	width: 45%;
+	float: right;
+	margin: 20px 5% 20px 0;
+}
+section.author #medholder p {
+	clear: right;
 }
