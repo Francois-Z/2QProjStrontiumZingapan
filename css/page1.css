@@ -3,39 +3,69 @@
 	position: absolute;
 }
 
+/*banner*/
+section.banner p{
+	font-size: 16pt;
+}
+section.banner{
+	overflow: hidden;
+}
+
+/*common*/
+section.leras p, section.ati p, section.sazed p {
+	font-size: 120%;
+}
+
+section.leras article, section.ati article {
+	margin: 0px 7.5%;
+}
+section article {
+	text-align: justify;
+}
+
 /*Preservation*/
 section.leras {
 	background: white url("../images/smokesource.png") no-repeat -150px -150px;
 	margin: 0px;
+	width: 50%;
+	float: left;
+
 }
 section.leras > img {
 	box-sizing: border-box;
-	width: 25%;
+	width: 30%;
 	margin: 20px 7.5%;
 	float: left;
 }
-section.leras article {
-	margin: 0px 7.5%;
-}
-article.feruchemy {
-	border: 4px double black;
-	padding: 5px;
-}
-section.leras p, div.ati p {
-	font-size: 120%;
-}
+
 /*Ruin*/
 section.ati {
 	background: black url("../images/smokesource.png") no-repeat right -150px top -150px;
 	margin: 0px;
 	color: white;
+	width: 50%;
+	float: left;
 }
 section.ati > img {
 	box-sizing: border-box;
-	width: 25%;
+	width: 30%;
 	margin: 20px 7.5%;
 	float: right;
 }
-section.ati article {
-	margin: 0px 7.5%;
+
+/*Harmony*/
+section.sazed {
+	background: url("../images/smokesource.png") no-repeat -150px -150px, url("../images/smoke.png") no-repeat right -150px top -150px;
+	padding-bottom: 20px;
+	clear: left;
+	border-top: 2px solid #75cdff;
+}
+section.sazed article {
+	margin: 0px 15%;
+}
+section.sazed > img {
+	box-sizing: border-box;
+	display: block;
+	width: 25%;
+	margin: 20px auto;
 }
