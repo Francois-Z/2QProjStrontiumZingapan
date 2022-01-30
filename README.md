@@ -1,4 +1,5 @@
 ## The Mist Archives: Changelog
+
 ###Version 0.1.2
 - Redesigned "The Scadrial Gods and the Metallic Arts
 - Rewrote the content in said page
