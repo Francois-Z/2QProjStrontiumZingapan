@@ -1,6 +1,6 @@
 ## The Mist Archives: Changelog
 
-###Version 0.1.2
+### Version 0.1.2
 - Redesigned "The Scadrial Gods and the Metallic Arts
 - Rewrote the content in said page
 - Fixed banner text going out of screen when zooming/resizing
