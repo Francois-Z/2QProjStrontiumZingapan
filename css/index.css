@@ -1,7 +1,7 @@
 /*About the Navigations*/
 section.desc > article {
 	float: left;
-	width: 25%;
+	width: 33.33%;
 	box-sizing: border-box;
 }
 section.desc article > p {

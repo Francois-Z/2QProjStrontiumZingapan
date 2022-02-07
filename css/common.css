@@ -1,7 +1,6 @@
-/*prerequisites*/
+/*prerequisites------------------------------------------------------------------*/
 /*defaults needed elements' margin to 0, fixes weird white spaces*/
-body {margin: 0px}
-html {margin: 0px}
+body,html {margin: 0px}
 p,h1,h2,h3,h4,h5,h6{margin: 0px}
 
 /*clearfix hack*/
@@ -10,9 +9,20 @@ p,h1,h2,h3,h4,h5,h6{margin: 0px}
   clear: both;
   display: table;
 }
+/*fixes issues concerning body not having full height*/
+/*ultimately fixes page2 sticky position not working*/
+html {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+body {
+    width: 100%;
+    display: table-cell;
+}
+/*I thank user OwN in stackoverflow for this solution*/
 
-/*formatting*/
-
+/*formatting---------------------------------------------------------------------*/
 /*banner*/
 section.banner {
 	width: 100%;
@@ -36,6 +46,7 @@ section.banner p {
 	font-size: 20pt;
 }
 
+
 /*header*/
 header {
 	margin: 0px;
@@ -48,7 +59,7 @@ header {
 	padding-left:20px;
 	top: 0px;
 	background: black url("../images/smokesource.png") no-repeat 0px -80px;
-	z-index: 2;
+	z-index: 10;
 	font-family: "Gideon Roman", display, serif;
 }
 header a {
@@ -57,20 +68,10 @@ header a {
 }
 
 /*replaces "The Mist Archives" with "To Home" when you hover over it*/
-header a h1:nth-child(2){
-	color: rgba(255,255,255,0)
-}
-header a:hover h1:nth-child(1){
-	color: rgba(255,255,255,0);
-}
-header a:hover h1:nth-child(2){
-	color: rgba(255,255,255,1)
-}
-header a h1{
-	position:absolute;
-}
+header a h1:nth-child(2)       {display: none;}
+header a:hover h1:nth-child(1) {display: none;}
+header a:hover h1:nth-child(2) {display: inline;}
 /**/
-
 
 
 /*Navigation*/
@@ -78,15 +79,16 @@ nav {
 	box-sizing: border-box;
 	position: sticky;
 	top: 60px;
-	z-index: 2;
+	z-index: 10;
 }
 nav div {
 	box-sizing: border-box;
 	background-color: black;
 	border: 2px solid white;
 	border-top: 0px; 
-	width: 25%;
+	width: 33.33%;
 	float: left;
+	transition: transform 0.2s;
 }
 nav p {
 	text-align: center;
@@ -98,7 +100,7 @@ nav a {
 }
 nav a:hover div{
 	background: #0d0d0d url("../images/bluemist3.png") no-repeat -10px -100px;
-	font-size: 110%;
+	transform: scale(105%)
 }
 
 
@@ -114,4 +116,23 @@ footer {
 }
 footer > div {
 	width: 20%;
+}
+.sprite {
+	width: 25px;
+	height: 25px;
+	float: left;
+	transform: scale(1.5,1.5);
+	margin: 10px;
+}
+.fb {
+	background: url('../images/sprites.png') no-repeat -51px -101px;
+}
+.github {
+	background: url('../images/sprites.png') no-repeat -452px -100px;
+}
+.yt {
+	background: url('../images/sprites.png') no-repeat -1px -251px;
+}
+footer a:hover div {
+	transform: scale(1.5,1.5) translate(0,-15%);
 }
