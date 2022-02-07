@@ -45,6 +45,16 @@ section.banner div{
 section.banner p {
 	font-size: 20pt;
 }
+section.banner > p {
+	position: absolute;
+	bottom: 0px;
+	margin: 10px;
+	color: white;
+}
+section.banner a:{text-decoration:none}
+section.banner a:link{color: lightblue}
+section.banner a:visited{color: blue}
+section.banner a:hover{color: rgb(230, 255, 255)}
 
 
 /*header*/
