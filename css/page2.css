@@ -1,0 +1,106 @@
+/*Metal arts*/
+section p {
+	font-size: 120%;
+}
+.metalart {
+	display: none;
+	float: left;
+	clear: left;
+	width: 100%;
+	position: relative;
+}
+.metalart:target {
+	display: block;
+}
+.metalart img {
+	display: block;
+	margin: 0px auto;
+	width: 1500px;
+}
+
+.metalart a > div {
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	background: white url(../images/icon.png) no-repeat center;
+	background-size: 45px 45px;
+	border: 5px solid black;
+	border-radius: 100%;
+	z-index: 2;
+}
+.metalart > div:nth-of-type(1) {
+	top: 60px;
+	left: 0px;
+	width: 400px;
+	position: absolute;
+	transform: translate(-420px, -50%);
+	font-family: "Gideon Roman", display, serif;
+	font-size: 20pt;
+	color: white;
+	background: black url("../images/bluemist3.png") no-repeat -10px -100px;
+	padding: 5px 10px;
+	text-align: right;
+	z-index: 1;
+	transition: transform 0.75s;
+}
+.metalart > a:hover ~ div:nth-of-type(1) {
+	transform: translateY(-50%);
+}
+.metalart > div:nth-of-type(2) {
+	width: 0;
+	height: 120px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-left: 120px solid black;
+	border-bottom: 30px solid transparent;
+}
+hr {
+	border: 1px solid black;
+	clear: left;
+	width: 90%;
+	margin: 20px auto;
+}
+
+
+/*Information*/
+section.info article {
+	width: 33.33%;
+	box-sizing: border-box;
+	float: left;
+	padding: 10px 50px;
+}
+section.info article h1 {
+	text-align: center;
+}
+section.info a{
+	display: none;
+	text-decoration: none;
+	color: white;
+}
+section.info a div{
+	width: 350px;
+	height: 50px;
+	background-color: black;
+	margin: 10px auto;
+	text-align: center;
+	position: relative;
+	transition: transform 0.2s;
+}
+section.info a div p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section.info:target a{
+	display: inline;
+}
+section.info:target a:hover div {
+	transform: scale(110%);
+	background: #0d0d0d url("../images/bluemist3.png") no-repeat -10px -100px;
+}
